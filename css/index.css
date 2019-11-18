@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf) format('truetype');
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 62.5%;
+  line-height: 1.7;
+  font-weight: 400;
+  background: #f2f2f0;
+}
+body .main-content-container {
+  max-width: 1000px;
+  margin: 1.5rem;
+  margin: 0 auto;
+}
+body .main-content-container h1 {
+  font-size: 2.3rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+body .main-content-container h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+body .main-content-container h3 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+body p {
+  font-size: 1.2rem;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+@media (max-width: 500px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.nav-bar .main-nav a {
+  margin: 1.5rem;
+  text-decoration: none;
+  color: #252223;
+  font-size: 1.1rem;
+}
+@media (max-width: 500px) {
+  .nav-bar .main-nav a {
+    display: flex;
+    justify-content: center;
+  }
+}
+.nav-bar .main-nav a:hover {
+  color: #7a87b0;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  height: 20%;
+  flex-direction: column;
+}
+footer .words {
+  width: 90%;
+  justify-content: space-between;
+  display: flex;
+  padding-top: 3rem;
+  margin: auto;
+}
+footer .words div {
+  width: 45%;
+}
+footer .a-div {
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  display: inherit;
+  height: 10vh;
+}
+footer .a-div nav {
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .a-div nav a {
+  font-size: large;
+  color: #252223;
+  text-decoration: none;
+  margin: 2px;
+  font-family: 'Anton', sans-serif;
+  width: 25%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .a-div nav a:hover {
+  border: #855A5C double 2px;
+  border-radius: 2px;
+  color: #7a87b0;
+}
+footer address {
+  text-align: center;
+  font-size: 1.1rem;
+}
+footer .copywrite {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
