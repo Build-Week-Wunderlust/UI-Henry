@@ -199,7 +199,7 @@ body p {
 .nav-bar .main-nav a {
   margin: 1.5rem;
   text-decoration: none;
-  color: #252223;
+  color: #0E7C7B;
   font-size: 1.1rem;
 }
 @media (max-width: 500px) {
@@ -242,7 +242,7 @@ footer .a-div nav {
 }
 footer .a-div nav a {
   font-size: large;
-  color: #252223;
+  color: #0E7C7B;
   text-decoration: none;
   margin: 2px;
   font-family: 'Anton', sans-serif;
