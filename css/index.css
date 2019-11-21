@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v9/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v9/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v9/pxiByp8kv8JHgFVrLEj6Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v9/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -154,116 +182,128 @@ table {
   font-display: swap;
   src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdr.ttf) format('truetype');
 }
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 62.5%;
   line-height: 1.7;
   font-weight: 400;
-  background: #f2f2f0;
-}
-body .main-content-container {
-  max-width: 1000px;
   margin: 1.5rem;
   margin: 0 auto;
+  max-width: 1440px;
 }
-body .main-content-container h1 {
+body h1 {
   font-size: 2.3rem;
   padding: 1.5rem;
   text-align: center;
 }
-body .main-content-container h2 {
+body h2 {
   font-size: 1.5rem;
   text-align: center;
   padding: 1.5rem;
 }
-body .main-content-container h3 {
+body h3 {
   font-size: 1.3rem;
   text-align: center;
 }
 body p {
   font-size: 1.2rem;
 }
-.nav-bar {
+nav {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  padding: 1.5rem;
-}
-@media (max-width: 500px) {
-  .nav-bar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-.nav-bar .main-nav a {
-  margin: 1.5rem;
-  text-decoration: none;
-  color: #0E7C7B;
-  font-size: 1.1rem;
-}
-@media (max-width: 500px) {
-  .nav-bar .main-nav a {
-    display: flex;
-    justify-content: center;
-  }
-}
-.nav-bar .main-nav a:hover {
-  color: #7a87b0;
-  cursor: pointer;
-}
-footer {
-  display: flex;
-  height: 20%;
-  flex-direction: column;
-}
-footer .words {
-  width: 90%;
   justify-content: space-between;
-  display: flex;
-  padding-top: 3rem;
-  margin: auto;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 5px 0;
 }
-footer .words div {
+nav .logo {
+  margin-left: 10%;
+}
+nav a {
+  text-decoration: none;
+  color: #362E34;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #94909B;
+}
+nav .btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+nav .btn-group .sign-up-btn {
+  background-color: #0E7C7B;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-right: 15px;
+  color: #FFFFFF;
+}
+nav .btn-group .sign-up-btn:hover {
+  color: #362E34;
+  background-color: #FFFFFF;
+}
+nav .btn-group .login-btn {
+  background-color: #F0F0F0;
+  padding: 8px 10px;
+  border-radius: 5px;
+  color: #362E34;
+}
+nav .btn-group .login-btn:hover {
+  color: #F0F0F0;
+  background-color: #362E34;
+}
+.header-img {
+  background-image: url("/img/Helicopter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-overlay {
+  position: absolute;
+  text-align: center;
+  padding-top: 200px;
+}
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+p {
+  font-size: 1.6rem;
+}
+.lower-page {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+.lower-page .testimonials {
+  display: flex;
+  justify-content: center;
+  width: 32%;
+  margin: 2%;
+}
+.lower-page .testimonials .picture-div {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+}
+.lower-page .testimonials .testimonial-text {
+  display: flex;
+  flex-direction: column;
+  background-color: #F0F0F0;
+  padding: 5% 5%;
+}
+.lower-page .testimonials .testimonial-text .img-testimonial {
   width: 45%;
 }
-footer .a-div {
-  justify-content: center;
-  width: 80%;
-  margin: auto;
-  display: inherit;
-  height: 10vh;
-}
-footer .a-div nav {
-  display: flex;
-  width: 65%;
-  justify-content: space-around;
-  align-items: center;
-}
-footer .a-div nav a {
-  font-size: large;
-  color: #0E7C7B;
-  text-decoration: none;
-  margin: 2px;
-  font-family: 'Anton', sans-serif;
-  width: 25%;
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .a-div nav a:hover {
-  border: #855A5C double 2px;
-  border-radius: 2px;
-  color: #7a87b0;
-}
-footer address {
-  text-align: center;
-  font-size: 1.1rem;
-}
-footer .copywrite {
-  text-align: center;
-}
-img {
-  max-width: 100%;
+.lower-page .testimonials .testimonial-text h3 {
+  font-weight: 500;
+  font-size: 1.8rem;
 }
